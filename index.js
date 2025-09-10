@@ -2,27 +2,28 @@
 var questionsArr = [
   {
     question: "Are aquariums peaceful?",
-    answer: true
+    answer: true,
   },
   {
     question: "Is the sky blue?",
-    answer: true
+    answer: true,
   },
   {
     question: "Are blue jays native to the US?",
-    answer: true
+    answer: true,
   },
   {
     question: "Was Thomas Jefferson our 2nd president?",
-    answer: false
+    answer: false,
   },
   {
     question: "Can dogs eat grapes?",
-    answer: false
-  }
-]; //Array for questions, create objects - key-value pairs
+    answer: false,
+  },
+];
+
 function runQuiz() {
-    for (let i = 0; i < questionsArr.length; i++){
-    let playerAnswer = confirm(question);
-    }
+  for (let i = 0; i < questionsArr.length; i++) {
+    let playerAnswer = confirm(questionsArr[i].question);
+  }
 }
