@@ -21,9 +21,14 @@ var questionsArr = [
     answer: false,
   },
 ];
-
+let correctAnswer = 0;
 function runQuiz() {
   for (let i = 0; i < questionsArr.length; i++) {
     let playerAnswer = confirm(questionsArr[i].question);
+    if (playerAnswer == questionsArr[i].answer){
+        correctAnswer += 1;
+    }
   }
+  let score = (correctAnswer/questionsArr.length)*100;
+  console.log(score);
 }
